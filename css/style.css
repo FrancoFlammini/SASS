@@ -1,19 +1,7 @@
-.navbar {
-  background-color: rgb(153, 0, 255);
-  border: 1% solid #5c0099;
-}
-.navbar:hover {
-  background-color: lighteen(rgb(255, 119, 255), 10%);
-}
-
 body {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
-header {
-  background-color: black;
-  font-size: 35px;
-}
 header img {
   display: flex;
   align-items: center;
@@ -21,7 +9,7 @@ header img {
   margin-left: 42.6%;
 }
 header h1 {
-  color: rgb(244, 244, 244);
+  color: white;
   font-family: "Julius Sans One", sans-serif;
   font-size: 4rem;
   font-weight: 400;
@@ -29,19 +17,44 @@ header h1 {
   margin-top: 2%;
   margin-bottom: 2%;
 }
-header nav {
-  background-color: yellow;
-}
 header nav a {
+  color: white;
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
 }
-header nav a:hover {
-  background-color: pink;
+
+div h2 {
+  text-align: center;
+  color: white;
+  font-family: "Julius Sans One", sans-serif;
 }
-@media screen and (min-width: 600px) {
-  header {
-    background-color: rgb(0, 0, 0);
-  }
+div p {
+  text-align: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+div footer {
+  text-align: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+div i {
+  color: green;
+  font-size: 250%;
+  position: fixed;
+  right: 0.6%;
+  bottom: 0.6%;
+}
+
+.bg-dark {
+  --bs-bg-opacity: 1;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

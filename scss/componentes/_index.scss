@@ -3,8 +3,7 @@ body{
 }
 
 header{
-    background-color: $bg-black;
-    font-size: nth($size , 4);
+
     img{
         display: flex; 
         align-items: center;
@@ -12,7 +11,7 @@ header{
         margin-left: 42.6%;
     }
     h1{
-        color: rgb(244, 244, 244);
+        color: $bg-white;
         font-family:'Julius Sans One', sans-serif;
         font-size: 4rem;
         font-weight: 400;
@@ -20,17 +19,58 @@ header{
         margin-top: 2%;
         margin-bottom: 2%;
     }
-    nav{
-        background-color: $bg-yellow;
-        a{
-            text-decoration: none;
-            &:hover{
-                background-color: pink;
-            }
+     nav{
+         a{
+         color: $bg-white;
+         text-decoration: none;
+         font-family: 'Montserrat', sans-serif;
+         }
         }
     }
-    @media screen and (min-width:600px) {
-        background-color: rgb(0, 0, 0);
+    div{
+        h2{
+            text-align: center;
+            color: $bg-white;
+            font-family:'Julius Sans One', sans-serif;
+        }
+
+
+        p{
+            text-align: center;
+            color: $bg-white;
+            font-family: 'Montserrat', sans-serif;
+        }
+        footer{
+            text-align: center;
+            color: $bg-white;
+            font-family: 'Montserrat', sans-serif;
+        }
+        i{
+            color: green;
+            font-size: 250%;
+            position: fixed;
+            right: 0.6%;
+            bottom: 0.6%;
+        }
+}   
+
+//          &:hover{
+//              background-color: $bg-yellow;
+//          }
+//      }
+//  }
+//  @media screen and (min-width:1600%) {
+//      background-color: rgb(219, 0, 0);
         
-    }
+//      }
+//  }
+
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.navbar-light .navbar-nav .nav-link {
+    color: $bg-white;
 }
