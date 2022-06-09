@@ -1,0 +1,10 @@
+$color-principal: rgb(153, 0, 255);
+$color-secundario: rgb(255, 119, 255);
+
+.navbar{
+    background-color: $color-principal;
+    border: 1% solid darken($color-principal, 20%);
+    &:hover{
+        background-color: lighteen($color-secundario, 10%);
+    }
+}

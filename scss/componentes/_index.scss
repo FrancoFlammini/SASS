@@ -1,0 +1,36 @@
+body{
+    background-color: map-get($header, bg-header);
+}
+
+header{
+    background-color: $bg-black;
+    font-size: nth($size , 4);
+    img{
+        display: flex; 
+        align-items: center;
+        width: 15%;
+        margin-left: 42.6%;
+    }
+    h1{
+        color: rgb(244, 244, 244);
+        font-family:'Julius Sans One', sans-serif;
+        font-size: 4rem;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+    nav{
+        background-color: $bg-yellow;
+        a{
+            text-decoration: none;
+            &:hover{
+                background-color: pink;
+            }
+        }
+    }
+    @media screen and (min-width:600px) {
+        background-color: rgb(0, 0, 0);
+        
+    }
+}
