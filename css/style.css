@@ -27,23 +27,87 @@ div h2 {
   text-align: center;
   color: white;
   font-family: "Julius Sans One", sans-serif;
+  margin-top: 4%;
+  margin-right: 17.5%;
+  text-decoration: underline;
 }
 div p {
   text-align: center;
   color: white;
   font-family: "Montserrat", sans-serif;
+  margin-right: 22%;
 }
-div footer {
+div iframe {
+  position: relative;
+  top: 0%;
+  left: -8%;
+  right: 0%;
+  bottom: 0%;
+  height: 80%;
+  width: 80%;
+}
+
+footer {
   text-align: center;
   color: white;
   font-family: "Montserrat", sans-serif;
 }
-div i {
+
+i {
   color: green;
   font-size: 250%;
   position: fixed;
   right: 0.6%;
   bottom: 0.6%;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 0.2fr 1fr 1fr;
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas: "sidebar content1 content1" "sidebar content2 content2 " "footer footer footer";
+  grid-gap: 0.2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #f00000;
+  text-align: center;
+  margin-left: 11.5%;
+}
+
+#sidebar {
+  background: black;
+  grid-area: sidebar;
+  border-radius: 5px;
+  padding-top: 20%;
+  margin-left: -100%;
+}
+
+#content1 {
+  background: black;
+  grid-area: content1;
+  border-radius: 15px;
+  padding-top: 15px;
+}
+
+#content2 {
+  background: black;
+  grid-area: content2;
+  border-radius: 15px;
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.4fr 0.2fr;
+    grid-template-areas: "sidebar" "content1" "content2" "footer";
+  }
+}
+.animate__animated.animate__flash {
+  animation-duration: 2s;
+  animation-iteration-count: 2;
 }
 
 .bg-dark {
