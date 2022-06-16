@@ -2,12 +2,6 @@ body {
   background-color: rgb(0, 0, 0);
 }
 
-header img {
-  display: flex;
-  align-items: center;
-  width: 15%;
-  margin-left: 42.6%;
-}
 header h1 {
   color: white;
   font-family: "Julius Sans One", sans-serif;
@@ -49,18 +43,12 @@ div p {
 }
 div iframe {
   position: relative;
-  top: 0%;
+  top: -65%;
   left: -8%;
   right: 0%;
   bottom: 0%;
   height: 80%;
   width: 80%;
-}
-
-footer {
-  text-align: center;
-  color: white;
-  font-family: "Montserrat", sans-serif;
 }
 
 i {
@@ -85,6 +73,13 @@ i {
   text-align: center;
   margin-left: 11.5%;
 }
+@media screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.4fr 0.2fr;
+    grid-template-areas: "sidebar" "content1" "content2" "footer";
+  }
+}
 
 #sidebar {
   background: black;
@@ -108,13 +103,12 @@ i {
   padding-top: 15px;
 }
 
-@media screen and (max-width: 550px) {
-  .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 0.4fr 0.2fr;
-    grid-template-areas: "sidebar" "content1" "content2" "footer";
-  }
+#footer {
+  text-align: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
 }
+
 .animate__animated.animate__flash {
   animation-duration: 2s;
   animation-iteration-count: 2;
@@ -129,6 +123,14 @@ i {
 
 .navbar-light .navbar-nav .nav-link {
   color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  width: 15%;
+  margin-left: 42.6%;
+  margin-top: 2%;
 }
 
 /*# sourceMappingURL=style.css.map */
